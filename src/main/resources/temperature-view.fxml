@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.TemperatureController"
+      spacing="15"
+      alignment="CENTER"
+      prefWidth="400"
+      prefHeight="350">
+
+    <Label fx:id="appTitleLabel" text="Temperature Converter"/>
+
+    <Label fx:id="languageLabel" text="Select language"/>
+
+    <ComboBox fx:id="languageBox"/>
+
+    <Label fx:id="temperatureLabel" text="Enter Temperature"/>
+
+    <TextField fx:id="temperatureInput"/>
+
+    <Label fx:id="conversionLabel" text="Your choice:"/>
+    <ComboBox fx:id="conversionBox"/>
+
+
+    <Label text="Saved Journeys"/>
+
+    <ListView fx:id="journeyListView"
+              prefWidth="380"
+              prefHeight="150"/>
+
+
+    <Button fx:id="convertButton"
+            text="Convert"
+            onAction="#handleConvert"/>
+
+
+    <Label fx:id="resultLabel" text="Result will appear here"/>
+    <Label text="Journey Database"/>
+
+    <TextField fx:id="distanceInput"
+               promptText="Enter distance (km)"/>
+
+    <TextField fx:id="travelTimeInput"
+               promptText="Enter travel time (hours)"/>
+
+    <Button text="Save Journey"
+            onAction="#saveJourney"/>
+
+    <Label fx:id="databaseResultLabel"/>
+</VBox>
