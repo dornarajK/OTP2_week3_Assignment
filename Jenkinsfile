@@ -41,9 +41,6 @@ pipeline {
         }
 
         stage('Docker Push') {
-            when {
-                branch 'main'
-            }
 
             steps {
                 withCredentials([
