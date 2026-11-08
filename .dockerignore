@@ -1,0 +1,6 @@
+target/
+.idea/
+.git/
+*.mv.db
+*.trace.db
+error.txt
