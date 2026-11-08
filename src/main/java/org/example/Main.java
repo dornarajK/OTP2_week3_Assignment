@@ -24,7 +24,7 @@ public class Main extends Application {
                 bundle
         );
 
-        Scene scene = new Scene(loader.load(), 400, 350);
+        Scene scene = new Scene(loader.load(), 460, 780);
 
         stage.setTitle(bundle.getString("app.title"));
         stage.setScene(scene);
